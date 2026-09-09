@@ -246,8 +246,6 @@ list(t)
 [1, 12.3, 4, 'c']
 set(t)
 {'c', 1, 12.3, 4}
-bool(t)]
-SyntaxError: unmatched ']'
 bool(t)
 True
 dict(t)
