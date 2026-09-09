@@ -1,0 +1,157 @@
+7 TYPES OF OPERATORS
+
+1)ARTHIMATIC 
+2)COMPARISON 
+3)ASSIGNMENT 
+4)RELATIONAL OR LOGICAL
+5)MEMBERSHIP
+6)IDENTITY 
+7)BITWISE
+
+1)ARTHIMATIC OPERATOR=>(+,-,*,%,/,//,**)
+   addition +
+   subtraction -
+   multiplication *
+   division /
+   =>16/3
+   5.333333333333333
+   modulus %
+   floor division(//)(if u give integer then it will give only integer value ,if u give float value then it will give float value)
+   =>16//3
+   5
+   exponential(**)
+
+2) COMPARISION OPERATOR
+   <
+   >
+   <=
+   >=
+   ==
+   != 
+
+3)ASSIGNMENT OPERATOR
+   +=
+   -=
+   /=
+   //=
+   *=
+   **=
+   %=
+
+4)RELATIONAL OR LOGICAL
+   AND=> ALL THE STATEMNETS SHLOULD BE TRUE 
+   OR=> ANY ONE OF THE STATEMENT MUST BE TRUE
+   NOT=> IF TRUE THEN IT BECOMES FALSE IF FALSE THEN IT BECOME TRUE
+
+5)MEMBERSHIP OPERATOR(CHECHKING THE VALUE PRESENT IN VARIABLE OR NOT) => STR,LIST,TUPLE,DICT,SET
+ IN (IF ITS PRESENT THEN IT WIL BE TRUE ELSE FALSE)
+ NOT IN (IF ITS NOT THERE IN THEN IT WILL BE TRUE ELSE FALSE)
+s = 'python programming'
+
+'a' in s
+True
+'c++' not in s
+True
+'program' in s
+True
+l = [1,2,3,4]
+3 in l
+True
+5 in l
+False
+5 not in l
+True
+4 not in l
+False
+t = (2,3,4,5)
+2 not in t
+False
+3 in t
+True
+5 in t
+True
+'abc' not in t
+True
+s = {3,6,7,8}
+3 in s
+True
+7 in s
+True
+9 in s
+False
+'people' in s
+False
+'waste' not in s
+True
+data = { 'name' : 'usha' , 'course' : 'pfs' , 'batch' = 65}
+'name' in data
+True
+65 in data'
+
+6)IDENTITY 
+SHARING SAME OBJECT REFERENE(NEEDS TO SHARE SAME ID)
+l = [1,2,3,4,5]
+m = [1,2,3,4,5]
+id(l)
+2594650218048
+id(m)
+2594651840832
+l == m
+True
+l is m
+False
+n = m
+n is m
+True
+m is n
+True
+
+7)BITWISE,
+LOGICAL AND (&) , | OR , ^ EXCLUSIVE OR SAME BITS 0 DIFF BITS 1 => 0,0 = 0, 1,0 = 1 , <<(ZEROS WILL BE ADDED) ,>>(ZEROS WILL REMOVE) ,~(not)
+
+
+# OUTPUT FORMATE
+COMMA SEPERATION => sep='' (used for removing space, \n adding next line , end is used for ending up with next line or anything needed )
+a = 10
+b = 10.2
+c = 'codegnan'
+print(a,b,c)
+10 10.2 codegnan
+print("a=",a,"b=",b,"c=",c)
+a= 10 b= 10.2 c= codegnan
+print("a=",a,"b=",b,"c=",c,sep='')
+a=10b=10.2c=codegnan
+print("a=",a,"b=",b,"c=",c,sep='/n')
+a=/n10/nb=/n10.2/nc=/ncodegnan
+print("a=",a,"b=",b,"c=",c,sep = '\n')
+a=
+10
+b=
+10.2
+c=
+codegnan
+print("a=",a,"b=",b,"c=",c,sep = '\t')
+a=	10	b=	10.2	c=	codegnan
+print("a=",a,"b=",b,"c=",c,sep = '\t',end= '\n\n')
+a=	10	b=	10.2	c=	codegnan
+
+print("a=",a, "b=",b, "c=",c,sep = '\t',end= '@')
+a=	10	b=	10.2	c=	codegnan@
+
+
+# f string (f'')
+print(f'a={a} b={b} c={c}')
+a=10 b=10.2 c=codegnan
+
+
+#modulus
+print('a=%d b=%f c=%s' %(a,b,c))
+a=10 b=10.200000 c=codegnan
+print('a={} b={} c={}' .format(a,b,c))
+a=10 b=10.2 c=codegnan
+print('a={} b={} c={}' .format(b,c,a))
+a=10.2 b=codegnan c=10
+print('a={0} b={1} c={2}' .format(a,b,c))
+a=10 b=10.2 c=codegnan
+print('a={2} b={0} c={1}' .format(a,b,c))
+a=codegnan b=10 c=10.2
