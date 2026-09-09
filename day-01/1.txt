@@ -1,0 +1,72 @@
+PYTHON FULL STACK DEVELOPMENT WITH DSA AND GEN AI
+
+
+PYTHON
+
+DAY 1
+
+
+Software : instructions 
+Software is a collection of programs, data, and instructions that tell a computer how to perform specific tasks.
+
+System Software – such as operating systems like Windows or Linux, which manage hardware and system operations.
+Application Software – such as MS Word or web browsers, which help users perform specific tasks
+
+Hardware: physical parts 
+hardware is the physical part of a computer, software is the logical part that controls and operates the hardware. It enables users to interact with the system and perform activities like browsing, coding, or creating documents
+
+machine language: low level   0s and 1s       
+Machine language is the lowest-level programming language that a computer can understand and execute directly. It is written in binary format, consisting of only 0s and 1s.
+
+Assembly language: low level  Codes(ADD,SUB,MULTI)
+uses symbolic codes, known as mnemonics, instead of binary (0s and 1s) to write instructions for a computer.
+
+Automation memory management : Stack Static Heap
+Stack stores temporary data for function calls
+static memory holds global and fixed data for the entire program
+heap is used for dynamically allocated memory during runtime. 
+
+python supports asynchronous 
+Yes, Python supports asynchronous programming using the async and await keywords, which allow multiple tasks to run concurrently without blocking execution.
+
+features 
+
+Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility.
+
+Key Features:
+
+Easy to Learn & Readable – Simple syntax similar to English
+Interpreted Language – No need for compilation
+Platform Independent – Runs on Windows, Linux, Mac
+Object-Oriented – Supports OOP concepts like classes and objects
+Dynamically Typed – No need to declare variable types
+Large Standard Library – Built-in modules for many tasks
+Open Source – Free to use and modify
+Supports Multiple Paradigms – OOP, procedural, and functional
+
+So, Python is widely used because it is simple, flexible, and powerful for various applications like web development, data science, and automation.
+
+supports procedural language and oops 
+
+Procedural programming :(do not depend on user depends on the logic and operations)
+is a programming approach where a program is written as a sequence of step-by-step instructions using functions and procedures to perform tasks. It focuses on “how to do” a task by breaking it into smaller, manageable steps.
+
+oops: organizes code into objects, which contain both data (variables) and behavior (methods).
+class: is a blueprint which contains both attribute  and methods 
+object: instance of class 
+
+example
+             Instagram(blueprint): people who use(objects)
+
+
+Encapsulation: Wrapping data and methods into a single unit (class) and restricting direct access to protect data.
+Inheritance: A mechanism where one class acquires properties and methods of another class, promoting code reuse.
+Polymorphism: Ability of a function or method to take multiple forms, allowing the same interface to behave differently.
+Abstraction: Hiding implementation details and showing only essential features to the user.
+
+These four pillars of OOP help in building secure, reusable, and easy-to-maintain software.
+
+
+
+
+
