@@ -1,0 +1,432 @@
+STRING OPERATIONS AND METHODS IN PYTHON
+
+STRING OPERATIONS
+
+1. CONCATENATION
+   Used to join two or more strings.
+
+Example:
+
+```python
+a = "Hello"
+b = "World"
+print(a + " " + b)
+```
+
+Output: Hello World
+
+2. REPETITION
+   Used to repeat a string multiple times.
+
+Example:
+
+```python
+text = "Hi "
+print(text * 3)
+```
+
+Output: Hi Hi Hi
+
+3. INDEXING
+   Used to access a single character from a string.
+
+Example:
+
+```python
+name = "Python"
+print(name[0])
+print(name[-1])
+```
+
+Output:
+P
+n
+
+Index starts from 0. Negative index starts from -1.
+
+4. SLICING
+   Used to get a part of a string.
+
+Example:
+
+```python
+text = "Python"
+print(text[0:3])
+print(text[2:5])
+print(text[:4])
+print(text[3:])
+```
+
+Output:
+Pyt
+tho
+Pyth
+hon
+
+Start index is included and end index is excluded.
+
+5. MEMBERSHIP
+   Used to check if a value exists in a string.
+
+Example:
+
+```python
+text = "Python"
+print("Py" in text)
+print("Java" not in text)
+```
+
+Output:
+True
+True
+
+ASCII FUNCTIONS
+
+ord()
+Converts a character to its ASCII value.
+
+Example:
+
+```python
+print(ord('A'))
+```
+
+Output: 65
+
+chr()
+Converts an ASCII value to its character.
+
+Example:
+
+```python
+print(chr(65))
+```
+
+Output: A
+
+BUILT-IN STRING FUNCTIONS
+
+sorted()
+Sorts characters of a string and returns a list.
+
+Example:
+
+```python
+print(sorted("python"))
+```
+
+Output: ['h', 'n', 'o', 'p', 't', 'y']
+
+max()
+Returns the highest character.
+
+Example:
+
+```python
+print(max("python"))
+```
+
+Output: y
+
+min()
+Returns the smallest character.
+
+Example:
+
+```python
+print(min("python"))
+```
+
+Output: h
+
+len()
+Returns the length of the string.
+
+Example:
+
+```python
+print(len("python"))
+```
+
+Output: 6
+
+
+CASE CONVERSION METHODS
+
+upper()
+Converts all characters to uppercase.
+
+```python
+print("hello".upper())
+```
+
+Output: HELLO
+
+lower()
+Converts all characters to lowercase.
+
+```python
+print("HELLO".lower())
+```
+
+Output: hello
+
+swapcase()
+Converts lowercase to uppercase and uppercase to lowercase.
+
+```python
+print("PyThOn".swapcase())
+```
+
+Output: pYtHoN
+
+capitalize()
+Converts the first character of the string to uppercase.
+
+```python
+print("hello world".capitalize())
+```
+
+Output: Hello world
+
+title()
+Converts the first character of every word to uppercase.
+
+```python
+print("hello world".title())
+```
+
+Output: Hello World
+
+casefold()
+Converts string to lowercase for comparison purposes.
+
+```python
+print("HELLO".casefold())
+```
+Output: hello
+
+
+
+
+ALIGNMENT METHODS
+
+center()
+Aligns the string to the center.
+
+```python
+print("Hi".center(10, '*'))
+```
+
+Output: ****Hi****
+
+ljust()
+Aligns the string to the left.
+
+```python
+print("Hi".ljust(10, '-'))
+```
+
+Output: Hi--------
+
+rjust()
+Aligns the string to the right.
+
+```python
+print("Hi".rjust(10, '-'))
+```
+
+Output: --------Hi
+
+zfill()
+Adds zeros to the left side of the string.
+
+```python
+print("5".zfill(3))
+print("123".zfill(5))
+```
+
+Output:
+005
+00123
+
+
+
+IMPORTANT POINT
+
+Strings are immutable, which means they cannot be changed after creation.
+
+```python
+s = "Python"
+
+print(s + " Language")
+print(s * 2)
+print(s[2])
+print(s[1:4])
+print("th" in s)
+print(len(s))
+print(max(s))
+print(s.upper())
+print("7".zfill(3))
+```
+find()
+
+Used to find the position of a substring.
+If the value is not found, it returns -1.
+
+Syntax:
+string.find(value)
+
+Example:
+
+text = "Python Programming"
+print(text.find("Pro"))
+print(text.find("Java"))
+
+Output:
+7
+-1
+
+Explanation:
+"Pro" starts at index 7
+"Java" is not present, so it returns -1
+
+
+find() returns -1 if not found
+index() gives error if not found
+
+REPLACE(), COUNT(), SPLIT() IN PYTHON
+
+---
+
+replace()
+
+Used to replace a part of a string with another value.
+
+Syntax:
+string.replace(old, new)
+
+Example:
+
+```python id="q2k9w1"
+text = "I like Python"
+print(text.replace("Python", "Java"))
+```
+
+Output:
+I like Java
+
+You can also limit the number of replacements.
+
+```python id="p7d4r8"
+text = "one one one"
+print(text.replace("one", "two", 2))
+```
+
+Output:
+two two one
+
+---
+
+count()
+
+Used to count how many times a value appears in a string.
+
+Syntax:
+string.count(value)
+
+Example:
+
+```python id="n5h2x6"
+text = "hello world"
+print(text.count("l"))
+```
+
+Output:
+3
+
+You can also count words.
+
+```python id="v3m8t1"
+text = "python is easy, python is powerful"
+print(text.count("python"))
+```
+
+Output:
+2
+
+---
+
+split()
+
+Used to split a string into a list based on a separator.
+
+Syntax:
+string.split(separator)
+
+Example:
+
+```python id="c9s1k4"
+text = "apple banana mango"
+print(text.split())
+```
+
+Output:
+['apple', 'banana', 'mango']
+
+Split using a specific separator.
+
+```python id="w6f2z9"
+text = "a,b,c,d"
+print(text.split(","))
+```
+
+Output:
+['a', 'b', 'c', 'd']
+
+You can also limit the number of splits.
+
+```python id="x8r5p3"
+text = "one two three four"
+print(text.split(" ", 2))
+```
+
+Output:
+['one', 'two', 'three four']
+
+---
+
+Important Points
+
+replace() returns a new string and does not change the original string
+count() returns the number of occurrences
+split() returns a list
+
+Strings are immutable, so original string will not change
+
+
+maketrans() is used to create a translation table.
+This table is used with the translate() method to replace characters.
+
+Syntax:
+
+str.maketrans(x, y)
+
+x represents characters to be replaced
+y represents characters to replace with
+
+Both x and y must be of same length
+
+Example 1:
+
+table = str.maketrans("abc", "xyz")
+text = "apple banana cat"
+print(text.translate(table))
+
+Output:
+xpple yxn xxt
+
+Explanation:
+a becomes x
+b becomes y
+c becomes z
