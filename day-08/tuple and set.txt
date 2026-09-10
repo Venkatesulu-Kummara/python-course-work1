@@ -1,0 +1,175 @@
+day 8 
+
+tuple
+
+tuple is a collection of elements enclosed inside parentheses ()
+
+tuple is immutable, ordered, fixed size and heterogeneous
+
+tuple allows duplicate values
+
+packing
+
+packing means storing multiple values inside a single tuple
+
+example
+
+a = 10, 20, 30
+
+unpacking
+
+unpacking means extracting tuple elements into separate variables
+
+example
+
+a, b, c = 10, 20, 30
+
+
+tuple operations
+
+concatenation
+
+repetition
+
+indexing
+
+slicing
+
+membership
+
+
+tuple methods
+
+count()
+
+used to count how many times an element occurs
+
+index()
+
+used to find the position of an element
+
+
+built in functions
+
+min()
+
+max()
+
+sum()
+
+sorted()
+
+len()
+
+all()
+
+any()
+
+
+set
+
+set is a collection of unique elements
+
+set is unordered and does not allow duplicate values
+
+set is mutable
+
+set can be created using set() or curly braces {}
+
+example
+
+a = {10, 20, 30}
+
+only immutable values can be stored inside a set
+
+we can add
+
+tuple
+
+boolean
+
+string
+
+int
+
+float
+
+we cannot add
+
+list
+
+set
+
+dictionary
+
+set does not support
+
+concatenation
+
+repetition
+
+indexing
+
+slicing
+
+set supports membership operation
+
+for combining sets, we use union instead of + operator
+
+
+set operations
+
+union |
+
+combines elements from both sets
+
+intersection &
+
+returns common elements from both sets
+
+difference -
+
+returns elements present in one set but not in the other
+
+symmetric difference ^
+
+returns elements that are present in either set but not in both
+
+subset
+
+checks whether one set is completely contained inside another set
+
+superset
+
+checks whether a set contains all elements of another set
+
+disjoint
+
+checks whether two sets have no common elements
+
+
+set functions
+
+sum()
+
+max()
+
+min()
+
+sorted()
+
+all()
+
+any()
+
+copy()
+
+len()
+
+set()
+
+frozenset
+
+frozenset is an immutable version of a set
+
+once a frozenset is created, its elements cannot be changed
