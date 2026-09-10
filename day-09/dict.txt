@@ -1,0 +1,161 @@
+dict collections of key value pairs 
+mutable dynamically sized allow duplicates orderd 
+keys shld me only ummutable values
+values can be anything
+{a:b}
+a is key 
+b is value
+values can be duplicate
+keys cant be duplicate it shld be unique
+
+
+DICTIONARY:COLLECTION OF KEY-VALUE PAIRS ENCLOSED WINTHIN IN CURLY BRACES{}
+PROPERTIES:KEYS- Should be immutable and unique(does not allow set ,dictionary ,list as key)
+          :VALUES- can be mutable or immutable and duplicates are allowed.
+          :ordered
+          :heterogeneous
+OPERATIONS:1.Membership
+           2.Direct access using keys
+           3.using var.get()- generally used in order to avoid keyerror
+           4.len()
+           5.max()
+           6.min()
+           7.sorted()
+           8.copy()
+           9.var.setdefault()
+MODIFICATION METHODS:1.var[key]=value
+                    2.var.update(key:value)
+                    3.var.popitem()-delete last key-value pair
+                    4.var.pop(key)- to remove particular key-value pair
+                    5.del var[]
+                    6.var.clear()
+
+dictionary
+
+dictionary is a collection of key value pairs enclosed within curly braces {}
+
+example
+
+student = {"name":"usha","age":20,"course":"bca"}
+
+key = name, age, course
+value = usha, 20, bca
+
+properties
+
+keys
+should be immutable
+should be unique
+list, set and dictionary cannot be used as keys
+
+values
+can be mutable or immutable
+duplicates are allowed
+can contain any data type
+
+ordered
+dictionary maintains insertion order
+
+heterogeneous
+keys and values can contain different data types
+
+
+operations
+
+1. membership
+
+"name" in student
+
+checks whether the key exists in the dictionary
+
+2. direct access using key
+
+student["name"]
+
+used to access the value using its key
+
+3. get()
+
+student.get("name")
+
+used to access a value safely and avoids keyerror
+
+4. len()
+
+len(student)
+
+returns the number of key value pairs
+
+5. max()
+
+max(student)
+
+returns the maximum key
+
+6. min()
+
+min(student)
+
+returns the minimum key
+
+7. sorted():sorted(student)
+
+returns the keys in sorted order
+
+8. copy():student.copy()
+
+creates a copy of the dictionary
+
+9. setdefault():
+student.setdefault("city","bangalore")
+
+if the key exists it returns its value
+if the key does not exist it adds the key with the given value
+
+10. any():any(student)
+
+returns true if at least one key is truthy
+
+11. all():all(student)
+
+returns true if all keys are truthy
+
+12. fromkeys():
+dict.fromkeys(["name","age","course"])
+creates a new dictionary using the given keys
+
+example
+
+keys = ["name","age","course"]
+student = dict.fromkeys(keys)
+output
+{"name":none,"age":none,"course":none}
+
+
+modification methods
+
+1. accessing
+student["age"] 
+we will access the age value
+student["age"] = 12
+adds a new key value pair or updates an existing value
+
+2. update()
+student.update({"city":"bangalore","email":"abc@gmail.com"})
+updates key value pairs helps you to add multiple values
+
+3. popitem()
+student.popitem()
+removes the last inserted key value pair
+
+4. pop()
+student.pop("age")
+removes a particular key value pair
+
+5. del
+del student["city"]
+deletes a particular key value pair
+
+6. clear()
+student.clear()
+removes all key value pairs
