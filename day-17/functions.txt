@@ -1,0 +1,165 @@
+Function:
+            function is a  block of reusable code used to perform specific task
+Syntax:
+    def function_name():
+    # code
+Example:
+    def greet():
+    print("hello")
+    greet()
+
+Advantages:
+1. code reusability – the same function can be used multiple times.
+   example: in an online shopping app, the `calculate_total()`
+    function can be used for every customer’s order.
+
+2. reduces code repetition – avoids writing the same code again and again.
+   example: in a student management system, one `calculate_percentage()`
+    function can calculate percentages for all students.
+
+3. improves readability – makes the program easy to read and understand.
+   example: in a banking app, using functions like `deposit()`, `withdraw()`, 
+   and `check_balance()` makes the code easy to understand.
+
+4. easy debugging – helps find and fix errors easily.
+   example: if the login feature is not working, we can check and fix only the `login()` function.
+
+5. easy maintenance – changes can be made in one function easily.
+   example: if delivery charges change in a food delivery app, we 
+   only need to update the `calculate_delivery_charge()` function.
+
+6. modular programming – divides a large program into smaller parts.
+   example: in an ATM system, separate functions can be used for `deposit()`, 
+   `withdraw()`, and `check_balance()`.
+
+7. saves time – reduces the time needed to write repeated code.
+   example: a `send_email()` function can quickly 
+   send confirmation emails to many users.
+
+8. well organized code – keeps the program structured and clean.
+   example: in an e-commerce app, separate functions c
+   an manage products, payments, orders, and users.
+
+9. reduces complexity – makes large programs easier to manage.
+   example: in a hospital management system, separate functions 
+   can handle patient registration, appointments, and billing.
+
+10. improves productivity – helps developers write programs faster and efficiently.
+    example: developers can reuse an existing `validate_email()` 
+    function instead of creating email validation code every time.
+
+
+Functions Types:
+1.Builtin Function
+2.User Fuction
+
+Built in functions:
+here are the commonly used built-in functions and methods for `string`, `list`, `tuple`, and `set`.
+
+### string methods
+
+`upper()` – converts to uppercase
+`lower()` – converts to lowercase
+`capitalize()` – capitalizes the first letter
+`title()` – capitalizes the first letter of every word
+`swapcase()` – swaps uppercase to lowercase and vice versa
+`casefold()` – converts to lowercase for case-insensitive comparison
+
+`strip()` – removes spaces from both sides
+`lstrip()` – removes spaces from the left side
+`rstrip()` – removes spaces from the right side
+
+`replace()` – replaces a value with another value
+`split()` – splits a string into a list
+`join()` – joins elements into a string
+
+`find()` – finds the first occurrence
+`index()` – finds the index of a value
+`count()` – counts occurrences of a value
+
+`startswith()` – checks whether the string starts with a value
+`endswith()` – checks whether the string ends with a value
+
+`isalpha()` – checks whether all characters are alphabets
+`isdigit()` – checks whether all characters are digits
+`isalnum()` – checks whether characters are alphabets or digits
+`islower()` – checks whether all characters are lowercase
+`isupper()` – checks whether all characters are uppercase
+`isspace()` – checks whether all characters are spaces
+`istitle()` – checks whether the string is in title case
+
+`center()` – centers the string
+`ljust()` – left aligns the string
+`rjust()` – right aligns the string
+`zfill()` – fills zeros on the left
+
+`encode()` – converts a string into bytes
+`format()` – formats a string
+`format_map()` – formats using a dictionary
+`expandtabs()` – replaces tab spaces
+`partition()` – splits into three parts at the first occurrence
+`rpartition()` – splits into three parts at the last occurrence
+`splitlines()` – splits the string at line breaks
+`translate()` – translates characters
+`maketrans()` – creates a translation table
+`removeprefix()` – removes a specified prefix
+`removesuffix()` – removes a specified suffix
+
+### list methods
+
+`append()` – adds one item at the end
+`extend()` – adds multiple items
+`insert()` – adds an item at a specific position
+`remove()` – removes a specified item
+`pop()` – removes and returns an item
+`clear()` – removes all items
+`index()` – returns the index of an item
+`count()` – counts occurrences of an item
+`sort()` – sorts the list
+`reverse()` – reverses the list
+`copy()` – creates a copy of the list
+
+### tuple methods
+
+`count()` – counts occurrences of an item
+`index()` – returns the index of an item
+
+### set methods
+
+`add()` – adds one item
+`update()` – adds multiple items
+`remove()` – removes an item and gives an error if not found
+`discard()` – removes an item without giving an error if not found
+`pop()` – removes a random item
+`clear()` – removes all items
+`copy()` – creates a copy of the set
+
+`union()` – combines elements from sets
+`intersection()` – returns common elements
+`difference()` – returns different elements
+`symmetric_difference()` – returns elements that are not common
+
+`intersection_update()` – updates the set with common elements
+`difference_update()` – updates the set with different elements
+`symmetric_difference_update()` – updates the set with non-common elements
+
+`issubset()` – checks whether a set is a subset
+`issuperset()` – checks whether a set is a superset
+`isdisjoint()` – checks whether two sets have no common elements
+
+common built-in functions used with these
+
+`len()` – returns the number of elements or characters
+`max()` – returns the largest value
+`min()` – returns the smallest value
+`sum()` – returns the total of numeric values
+`sorted()` – returns a sorted version
+`type()` – returns the data type
+`list()` – converts to a list
+`tuple()` – converts to a tuple
+`set()` – converts to a set
+`str()` – converts to a string
+`any()` – returns true if at least one value is true
+`all()` – returns true if all values are true
+`enumerate()` – returns index and value
+`reversed()` – returns elements in reverse order
