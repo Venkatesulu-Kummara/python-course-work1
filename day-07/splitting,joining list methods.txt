@@ -1,0 +1,49 @@
+LIST
+
+  List is a collection of elements enclosed in square braces[]
+
+LIST OPERATIONS:
+
+ Concatenation : is used to join two lists
+ repetition : is used to repeat list elements
+ indexing : is used to access an element using its index
+ slicing : is used to access a range of elements
+ membership : is used to check whether an element is present in the list
+ 
+LIST METHODS:
+
+ max() : max returns the largest element
+ min() : min returns the smallest element
+ len() : len returns the number of elements
+ sorted() : sorted returns the elements in sorted order
+ sum() : sum returns the total of numerical elements
+ list() : list converts an iterable into a list
+
+
+LIST MODIFICATION:
+
+append() adds an element at the end of the list
+
+extend() adds multiple elements to the list
+
+pop() removes the last element from the list
+
+pop(index) removes the element at the given index
+
+clear() removes all elements from the list
+
+del var[index] deletes the element at the given index
+
+index() returns the index position of an element
+
+count() returns the number of occurrences of an element
+
+copy() creates a copy of the list
+
+any() returns true if at least one element is true
+
+all() returns true if all elements are true
+
+sort() sorts the list in ascending order
+
+reverse() reverses the elements of the list
