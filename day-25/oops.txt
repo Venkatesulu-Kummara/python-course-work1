@@ -1,0 +1,170 @@
+####oops in python
+
+OOP stands for Object-Oriented Programming.
+It is a programming approach where we organize the program using classes and objects. 
+It helps us make code reusable, secure, organized, and easy to maintain
+
+class
+class is a blueprint or template which consists of attributes and methods.
+
+object
+object is an instance of a class. it is used to access the attributes and methods of a class.
+
+####types of access modifiers in python
+
+1. public
+public members can be accessed from anywhere in the program.
+
+2. protected
+protected members can be accessed within the class and its child classes.
+in python, protected members are represented using a single underscore _.
+
+3. private
+private members can mainly be accessed within the same class.
+in python, private members are represented using double underscore __.
+
+####main concepts of oops
+
+1. encapsulation
+encapsulation means wrapping data and methods together into a single unit called a class.
+
+it also helps in providing security by controlling access to the data.
+
+example
+a bank account class contains account details and methods like deposit and withdraw.
+
+
+2. inheritance
+inheritance means inheriting the properties and methods of a parent class into a child class.
+
+it helps in code reusability and allows us to add new features to an existing class.
+
+example
+version 1 is a parent class. we can create a child class from version 1 
+and add new features without changing the original class.
+
+types of inheritance
+
+1. single inheritance
+2. multilevel inheritance
+3. multiple inheritance
+4. hierarchical inheritance
+5. hybrid inheritance
+
+3. polymorphism
+polymorphism means many forms.
+
+the same method or operation can behave differently depending on the object or situation.
+
+example
+hotstar can be used by normal users and premium users. both use the same application, 
+but different features or actions may be available to them.
+
+
+4. abstraction
+abstraction means hiding unnecessary implementation details and showing 
+only the required information to the user.
+
+it helps to reduce complexity and makes the program easier to use.
+
+example
+when we use an atm, we select withdraw and enter the amount. we do not need 
+to know the internal process of how the bank verifies and processes the transaction.
+
+###why we need oops in python 
+oops is needed to organize and manage large programs using classes and objects.
+1. code reusability
+oops allows us to reuse existing code using inheritance.
+we can use the properties and methods of an existing class in a new class.
+
+2. code reusability and less duplication
+we can write common code once and reuse it instead of writing the same code multiple times.
+
+3. data security
+encapsulation helps to protect data by controlling access to attributes and methods.
+
+4. easy to maintain
+oops divides a large program into smaller classes and objects, which makes the 
+code easier to understand and maintain.
+
+5. flexibility
+polymorphism allows the same method or operation to perform different actions depending on the object.
+
+6. hides complexity
+abstraction hides unnecessary implementation details and shows only the required information.
+
+7. easy to modify
+we can add new features or modify existing features without affecting the entire program.
+
+8. suitable for large projects
+oops helps to structure and manage large and complex applications in an organized way.
+
+9. real world modeling
+oops allows us to represent real world entities as objects.
+
+example
+in a banking application, customer, account, employee and transaction can be 
+represented as different classes and objects.
+
+10. improves code organization
+classes and objects keep related data and functions together, making 
+the program more organized.
+
+####types of attributes
+
+1. class attribute
+class attribute is common to all objects of a class.
+it is defined inside the class.
+it can be accessed using the class name or object.
+
+example:
+class Student:
+    college = "ABC College"
+
+college is a class attribute.
+
+2. instance attribute
+instance attribute is different for each object.
+it depends on the object.
+it is usually defined using self inside the class.
+
+example:
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+####**self**
+
+self points to the **current object**.
+
+It is used to access the current object's **attributes and methods**.
+ 
+Example:
+
+class Student:
+    def display(self):
+        print("Hello")
+
+s1 = Student()
+s1.display()
+Here, when s1.display() is called, **self points to s1, the current object.
+Self is a reference that points to the current object.
+
+####three types of methods
+
+1. instance method
+instance method depends on the object.
+it uses self as the first parameter.
+
+2. class method
+class method depends on the class.
+it uses cls as the first parameter.
+it is defined using @classmethod.
+
+3. static method
+static method does not depend on the class or object.
+it does not use self or cls.
+it is mainly used as a helper function inside the class.
+it is defined using @staticmethod.
+
+: => we use colon for indentation and branching
